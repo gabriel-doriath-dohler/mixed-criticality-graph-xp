@@ -10,7 +10,7 @@ from pythainer.runners import ConcreteDockerRunner
 
 def get_mcgraph_builder(image_name: str) -> UbuntuDockerBuilder:
     # base_ubuntu_image = "ubuntu:22.04"
-    base_ubuntu_image = "ubuntu:23.10"
+    base_ubuntu_image = "ubuntu:24.04"
 
     user_name = "user"
     lib_dir = "/home/${USER_NAME}/workspace/libraries"
@@ -21,9 +21,9 @@ def get_mcgraph_builder(image_name: str) -> UbuntuDockerBuilder:
         user_name=user_name,
         lib_dir=lib_dir,
         packages=[
-            "python3.11",
-            "python3.11-dev",
-            "python3.11-venv",
+            "python3.12",
+            "python3.12-dev",
+            "python3.12-venv",
         ],
     )
     docker_builder.space()

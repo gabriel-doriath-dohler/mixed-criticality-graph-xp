@@ -303,7 +303,7 @@ def read_args():
         "-max_c_lo",
         "--max_wcet_LO",
         help="the maximum WCET for low-criticality execution time",
-        type=float,
+        type=int,
         required=False,
     )
     parser.add_argument(
